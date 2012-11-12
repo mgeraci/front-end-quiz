@@ -1,0 +1,14 @@
+- How do you link to a stylesheet in an html page?
+
+- How do you link to a javascript file in an html page?
+
+- You have two divs, a and b, and b is nested within a. Each has a click event bound to it in javascript; clicking a turns a’s background aqua, and clicking b turns b’s background blue.
+
+------------
+| div a    |
+|  -----   |
+| |div b|  |
+|  -----   |
+------------
+
+If you click
