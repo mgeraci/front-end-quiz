@@ -1,14 +1,20 @@
-- How do you link to a stylesheet in an html page?
+1) How do you link to a stylesheet in an html page?
+- <link rel='stylesheet' media='screen' href='path/to/stylesheet.css'> or <link type='text/stylesheet' href='path/to/stylesheet.css' />
 
-- How do you link to a javascript file in an html page?
+2) How do you link to a javascript file in an html page?
+- <script type='text/javascript' src='path/to/javascript.js'></script>
 
-- You have two divs, a and b, and b is nested within a. Each has a click event bound to it in javascript; clicking a turns a’s background aqua, and clicking b turns b’s background blue.
+3) You have two divs, a and b, and b is nested within a. Each has a click event bound to it in javascript; clicking a turns a’s background aqua, and clicking b turns a’s background blue.
 
 ------------
-| div a    |
+|  div a   |
 |  -----   |
 | |div b|  |
 |  -----   |
 ------------
 
-If you click
+If you click div a, it turns aqua. But if you click div b, div a turns aqua... why?
+- Event bubbling. Click events bubble up the dom tree, triggering parent elements' click events as they go. So the div does turn blue, but then immediately turns aqua from a's click event getting triggered.
+
+How would you stop this and get #a to turn blue when you click b?
+- Pass e into the click function and use e.stopPropagation().
