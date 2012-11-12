@@ -1,10 +1,22 @@
-1) How do you link to a stylesheet in an html page?
-- <link rel='stylesheet' media='screen' href='path/to/stylesheet.css'> or <link type='text/stylesheet' href='path/to/stylesheet.css' />
+- How do you link to a stylesheet in an html page?
+> <link rel='stylesheet' media='screen' href='path/to/stylesheet.css'> or <link type='text/stylesheet' href='path/to/stylesheet.css' />
 
-2) How do you link to a javascript file in an html page?
-- <script type='text/javascript' src='path/to/javascript.js'></script>
+- How do you link to a javascript file in an html page?
+> <script type='text/javascript' src='path/to/javascript.js'></script>
 
-3) You have two divs, a and b, and b is nested within a. Each has a click event bound to it in javascript; clicking a turns a’s background aqua, and clicking b turns a’s background blue.
+- Complete the following sequence: 1, 2, 4, 8, 16, __, __, __
+> 32, 64, 128
+
+- If you have an html file that's 7.5 kilobytes and it includes a css file that's 1.5 kilobytes, and a javascript file that's 500 bytes, what's the total page download size?
+> 7.5 + 1.5 + 0.5 = 9.5 kilobytes
+
+- Say you have a website with 4 pages that are 75 kilobytes each and one css file that's 20 kilobytes. If a user goes to each of the pages, what is the amount of data downloaded?
+> 4*75kb + 20kb = 320kb
+
+- For each html, css, and javascript, what's one thing you would change about that language?
+> There's no correct answer, it's just interesting to see.
+
+- You have two divs, a and b, and b is nested within a. Each has a click event bound to it in javascript; clicking a turns a’s background aqua, and clicking b turns a’s background blue. It looks like this:
 
 ------------
 |  div a   |
@@ -14,7 +26,19 @@
 ------------
 
 If you click div a, it turns aqua. But if you click div b, div a turns aqua... why?
-- Event bubbling. Click events bubble up the dom tree, triggering parent elements' click events as they go. So the div does turn blue, but then immediately turns aqua from a's click event getting triggered.
+> Event bubbling. Click events bubble up the dom tree, triggering parent elements' click events as they go. So the div does turn blue, but then immediately turns aqua from a's click event getting triggered.
 
 How would you stop this and get #a to turn blue when you click b?
-- Pass e into the click function and use e.stopPropagation().
+> Pass e into the click function and use e.stopPropagation().
+
+- css columns
+
+- javascript basic loop
+
+- css menu header
+
+- javascript setting background colors from data-background
+
+- javascript needing to redifine this
+
+- javascript switch the contents of two divs
