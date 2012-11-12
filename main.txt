@@ -43,7 +43,7 @@ How would you stop this and get #a to turn blue when you click b?
     console.log(i * 3 + 3);
   }
 
-- css menu header
+- Make a header from a ul that is 960px wide, and has 9 buttons. Each button should say "Button #", where # is the number 1-9. When you click a button, show a dropdown that says "Button # is the best!" where # is the button's number. If you'd like to use javascript, use vanilla js or jQuery. Feel free to pick sizes and colors that are pleasing to you.
 
 - javascript setting background colors from data-background
 
