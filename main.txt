@@ -10,7 +10,7 @@
 - If you have an html file that's 7.5 kilobytes and it includes a css file that's 1.5 kilobytes, and a javascript file that's 500 bytes, what's the total page download size?
 > 7.5 + 1.5 + 0.5 = 9.5 kilobytes
 
-- Say you have a website with 4 pages that are 75 kilobytes each and one css file that's 20 kilobytes. If a user goes to each of the pages, what is the amount of data downloaded?
+- Say you have a website with 4 pages that are 75 kilobytes each and one css file that's 20 kilobytes. If a user goes to each of the pages, what is the total amount of data downloaded?
 > 4*75kb + 20kb = 320kb
 
 - For each html, css, and javascript, what's one thing you would change about that language?
@@ -29,11 +29,19 @@ If you click div a, it turns aqua. But if you click div b, div a turns aqua... w
 > Event bubbling. Click events bubble up the dom tree, triggering parent elements' click events as they go. So the div does turn blue, but then immediately turns aqua from a's click event getting triggered.
 
 How would you stop this and get #a to turn blue when you click b?
-> Pass e into the click function and use e.stopPropagation().
+> Pass e into the click function and call e.stopPropagation().
 
 - css columns
 
-- javascript basic loop
+- In javascript, write a function that prints the first 20 multiples of 3 (e.g., 3, 6, 9, etc.). You can use console.log for your outpur, and feel free to use vanilla javascript, jQuery, or CoffeeScript.
+> something like:
+  for i in [0...20]
+    console.log 3 + i * 3
+
+  or:
+  for (i = 0; i<20; i++){
+    console.log(i * 3 + 3);
+  }
 
 - css menu header
 
@@ -42,3 +50,5 @@ How would you stop this and get #a to turn blue when you click b?
 - javascript needing to redifine this
 
 - javascript switch the contents of two divs
+
+- javascript header that is fixed to top of page, 100px tall, 50px tall after you scroll down 200px
