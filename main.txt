@@ -16,6 +16,9 @@
 - For each html, css, and javascript, what's one thing you would change about that language?
 > There's no correct answer, it's just interesting to see.
 
+- Describe the following image formats and what you would use them for: png, gif, jpg
+> png: image with alpha, gif: image with transparent parts but no translucent parts, jpg: photographs
+
 - You have two divs, a and b, and b is nested within a. Each has a click event bound to it in javascript; clicking a turns a’s background aqua, and clicking b turns a’s background blue. It looks like this:
 
 ------------
